@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DANNY BURGER SRL</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -20,42 +21,44 @@
         <!-- ____________________MAIN STARTS HERE___________________________ -->
 
         <main>
-            <input id="burger-name" name="burger-name" type="text" placeholder="Nome del panino">
+            <input id="burger-name" name="burger-name" type="text" placeholder="Name your burger">
             <h2>Ingredients</h2>
 
-            <ul>
+            <ul><!-- _____FOOD SECTION_____ -->
 
                 <li>
-                    <img src="img/cheese.svg" width="20px">
+                    <img src="img/cheese.svg">
                     <input id="formaggio" class="ingred" type="checkbox" data-price="2">Cheese
                 </li>
 
                 <li>
-                    <img src="img/fried-egg.svg" width="20px">
+                    <img src="img/fried-egg.svg">
                     <input id="uova" class="ingred" type="checkbox" data-price="3">Eggs
                 </li>
 
                 <li>
-                    <img src="img/mustard.svg" width="20px">
+                    <img src="img/mustard.svg">
                     <input id="mostarda" class="ingred" type="checkbox" data-price="4">Mustard
                 </li>
 
                 <li>
-                    <img src="img/tomato.svg" width="20px">
+                    <img src="img/tomato.svg">
                     <input id="pomodoro" class="ingred" type="checkbox" data-price="1">Tomatoes
                 </li>
 
                 <li>
-                    <img src="img/lettuce.svg" width="20px">
+                    <img src="img/lettuce.svg">
                     <input id="lattuga" class="ingred" type="checkbox" data-price="6">Lattuce
                 </li>
 
                 <li>
-                    <img src="img/ketchup.svg" width="20px">
+                    <img src="img/ketchup.svg">
                     <input id="ketchup" class="ingred" type="checkbox" data-price="1">Ketchup
                 </li>
 
             </ul>
+
+            <!-- _____COUPON SECTION_____ -->
 
             <div>
                 <label for="coupon">Discount coupon</label>
@@ -70,15 +73,15 @@
 
         <footer>
 
-            <span>Prezzo</span>
+            <span>Price &nbsp;</span>
 
             <span>
-              <span>€</span>
+              <span>£</span>
                 <span id="price"></span>
             </span>
 
         </footer>
     </div>
-    <script src="script.js"></script>
+
 </body>
 </html>
