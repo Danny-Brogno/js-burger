@@ -1,7 +1,7 @@
 // CREATING FUNCTION WITH ID "CALCULATE"
 
 var priceBtn = document.getElementById('calculate'); // Here I go get my html id and attach it to a variable
-priceBtn.addeventListener('click', function(){ // Here use this variable and start a function around it (starting from user clicling on the button)
+priceBtn.addEventListener('click', function(){ // Here use this variable and start a function around it (starting from user clicling on the button)
 
   var burgerName = document.getElementById('burger-name').value; // Inside the function I go get html id
   if (burgerName.lenght < 1) { // and say that IF the user types less than ONE word (lenght of the string) in the "name your burger" input type text
