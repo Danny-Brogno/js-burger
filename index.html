@@ -4,68 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DANNY BURGER SRL</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
+
+        <!-- __________________HEADER STARTS HERE___________________________ -->
+
         <header>
             <h1>Create your burger</h1>
         </header>
+
+        <!-- ____________________MAIN STARTS HERE___________________________ -->
+
         <main>
             <input id="burger-name" name="burger-name" type="text" placeholder="Nome del panino">
             <h2>Ingredients</h2>
+
             <ul>
+
                 <li>
                     <img src="img/cheese.svg" width="20px">
-                    <input id="formaggio" class="ingred" type="checkbox" data-price="2">
-                    Formaggio
+                    <input id="formaggio" class="ingred" type="checkbox" data-price="2">Cheese
                 </li>
+
                 <li>
                     <img src="img/fried-egg.svg" width="20px">
-                    <input id="uova" class="ingred" type="checkbox" data-price="3">
-                    Uova
+                    <input id="uova" class="ingred" type="checkbox" data-price="3">Eggs
                 </li>
+
                 <li>
                     <img src="img/mustard.svg" width="20px">
-                    <input id="mostarda" class="ingred" type="checkbox" data-price="4">
-                    Mostarda
+                    <input id="mostarda" class="ingred" type="checkbox" data-price="4">Mustard
                 </li>
+
                 <li>
                     <img src="img/tomato.svg" width="20px">
-                    <input id="pomodoro" class="ingred" type="checkbox" data-price="1">
-                    Pomodoro
+                    <input id="pomodoro" class="ingred" type="checkbox" data-price="1">Tomatoes
                 </li>
+
                 <li>
                     <img src="img/lettuce.svg" width="20px">
-                    <input id="lattuga" class="ingred" type="checkbox" data-price="6">
-                    Lattuga
+                    <input id="lattuga" class="ingred" type="checkbox" data-price="6">Lattuce
                 </li>
+
                 <li>
                     <img src="img/ketchup.svg" width="20px">
-                    <input id="ketchup" class="ingred" type="checkbox" data-price="1">
-                    Ketchup
+                    <input id="ketchup" class="ingred" type="checkbox" data-price="1">Ketchup
                 </li>
+
             </ul>
+
             <div>
                 <label for="coupon">Discount coupon</label>
                 <input id="burger-coupon" name="coupon" type="text" placeholder="Coupon">
             </div>
-            <button id="calculate">Calcola prezzo</button>
+
+            <button id="calculate">Calculate the price</button>
+
         </main>
+
+        <!-- ____________________FOOTER STARTS HERE_________________________ -->
+
         <footer>
+
+            <span>Prezzo</span>
+
             <span>
-                Prezzo
+              <span>€</span>
+                <span id="price"></span>
             </span>
-            <span>
-                <span>
-                    €
-                </span>
-                <span id="price">
-                </span>
-            </span>
+
         </footer>
     </div>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
