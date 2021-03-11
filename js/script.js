@@ -42,7 +42,7 @@ priceBtn.addEventListener('click', function() { // Here use this variable and st
 
     //
     if (couponFound) {
-      finalPrice += finalPrice / 100 * 20;
+      finalPrice = finalPrice / 100 * 20;
     }
 
     var printPrice = document.getElementById('price');
