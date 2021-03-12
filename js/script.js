@@ -15,7 +15,7 @@ priceBtn.addEventListener('click', function() { // Here use this variable and st
     // -------------------------ADDITION OF INGREDIENTS-----------------------------------------------------------------------------------
 
     var checkboxes = document.getElementsByClassName('ingredient'); // Here I create a a variable I am going to need in the for cycle
-    for ( var i = 0; i < checkboxes.length; i++) { // Creating "for cycle" because I need to apply addition of price for EVERY element (cheese, tomatoe, eggs, ketchup and mustard). So I either do them individually or do it with a "for cycle"
+    for ( var i = 0; i < checkboxes.lenght; i++) { // Creating "for cycle" because I need to apply addition of price for EVERY element (cheese, tomatoe, eggs, ketchup and mustard). So I either do them individually or do it with a "for cycle"
 
       var checkbox = checkboxes[i]; // Of course I don't know which one the user is going to choose (if any), so I use the array principle [] and ask the machine to "check" which ones he/she selected
       var passChecked = checkbox.checked; // The ".checked"	specifies whether a checkbox should be checked or not (true or false).
