@@ -23,7 +23,7 @@
             <input id="burger-name" name="burger-name" type="text" placeholder="Name your burger">
             <h2>Ingredients</h2>
 
-            <ul><!-- _____FOOD SECTION_____ -->
+            <ul class="line-with-two-foods"><!-- _____FOOD SECTION_____ -->
 
                 <li>
                     <img src="img/cheese.svg">
@@ -35,6 +35,12 @@
                     <input id="eggs" class="ingredient" type="checkbox" data-price="3">Eggs
                 </li>
 
+
+
+            </ul>
+
+            <ul class="line-with-two-foods">
+
                 <li>
                     <img src="img/mustard.svg">
                     <input id="mustard" class="ingredient" type="checkbox" data-price="4">Mustard
@@ -45,6 +51,10 @@
                     <input id="tomatoes" class="ingredient" type="checkbox" data-price="1">Tomatoes
                 </li>
 
+
+            </ul>
+
+            <ul class="line-with-two-foods">
                 <li>
                     <img src="img/lettuce.svg">
                     <input id="lattuce" class="ingredient" type="checkbox" data-price="6">Lattuce
@@ -64,13 +74,15 @@
                 <input id="burger-coupon" name="coupon" type="text" placeholder="Coupon">
             </div>
 
-            <button id="calculate">Calculate the price</button>
+            <button id="calculate">Calculate</button>
 
         </main>
 
         <!-- ____________________FOOTER STARTS HERE_________________________ -->
 
         <footer>
+
+          <div class="lol">
 
             <span>Price &nbsp;</span>
 
@@ -79,8 +91,11 @@
                 <span id="price"></span>
             </span>
 
+          </div>
+
         </footer>
     </div>
+
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

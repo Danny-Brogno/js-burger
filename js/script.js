@@ -8,7 +8,7 @@ priceBtn.addEventListener('click', function() { // Here use this variable and st
   var burgerName = document.getElementById('burger-name').value; // Inside the function I go get html id
   if (burgerName.lenght < 1) { // and say that IF the user types less than ONE word (lenght of the string) in the "name your burger" input type text
 
-    alert ("please insert a name for your burger"); // then an alert pops up and tells the user to re-type
+    alert("please insert a name for your burger"); // then an alert pops up and tells the user to re-type
   } else {
     var finalPrice = 5; // otherwise a standard price will pop up
 
@@ -42,7 +42,7 @@ priceBtn.addEventListener('click', function() { // Here use this variable and st
 
     //
     if (couponFound) {
-      finalPrice = finalPrice / 100 * 20;
+      finalPrice = finalPrice / 100 * 20; // in case the [i] finds the relative coupon (same as the user) then a discount is applied
     }
 
     var printPrice = document.getElementById('price');
