@@ -42,7 +42,7 @@ priceBtn.addEventListener('click', function() { // Here use this variable and st
 
     //
     if (couponFound) {
-      finalPrice = finalPrice / 100 * 20; // in case the [i] finds the relative coupon (same as the user) then a discount is applied
+      finalPrice = finalPrice - (finalPrice / 100 * 20); // in case the [i] finds the relative coupon (same as the user) then a discount is applied
     }
 
     var printPrice = document.getElementById('price');
